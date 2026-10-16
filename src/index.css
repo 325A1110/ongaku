@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #07090e;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', 'Zen Kaku Gothic New', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-mincho {
+  font-family: 'Shippori Mincho', 'Yu Mincho', 'Hiragino Mincho ProN', Georgia, serif;
+}
+
+.font-sans-jp {
+  font-family: 'Plus Jakarta Sans', 'Zen Kaku Gothic New', sans-serif;
+}
+
+/* Streetlamp flicker and warm breath */
+@keyframes streetlight-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.35));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.6));
+  }
+}
+
+.animate-streetlight {
+  animation: streetlight-pulse 6s ease-in-out infinite;
+}
+
+/* Subtle rain drift */
+@keyframes rain-fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Subtle mist drift */
+@keyframes mist-drift {
+  0% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+.animate-mist {
+  animation: mist-drift 20s ease-in-out infinite;
+}
+
+/* Glass panel */
+.bg-glass {
+  background: rgba(13, 17, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.bg-glass-subtle {
+  background: rgba(18, 24, 38, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2535;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "夜 — YORU | 静かな夜の住宅街と哀愁のバラード",
+  "description": "静かな夜の住宅街路と雨音、切なく響くピアノ。楽曲「夜」の世界観を体感するダークモード音楽Webサイト。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
